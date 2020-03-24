@@ -62,7 +62,7 @@
                 <title>Таймер</title>
                 <use xlink:href="/img/library.svg#stopwatch"></use>
               </svg>
-              <h3 class="advantsges__item-title">Оперативные сроки</h3>
+              <h3 class="advantages__item-title">Оперативные сроки</h3>
               <p class="advantages__item-text">Усовершенствованная логистическая система позволяет нам просчитывать
                 стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
             </a>
@@ -73,7 +73,7 @@
                 <title>Компания</title>
                 <use xlink:href="/img/library.svg#hired"></use>
               </svg>
-              <h3 class="advantsges__item-title">Крупные поставщики</h3>
+              <h3 class="advantages__item-title">Крупные поставщики</h3>
               <p class="advantages__item-text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
                 CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей
                 продукции.</p>
@@ -85,7 +85,7 @@
                 <title>Аноним</title>
                 <use xlink:href="/img/library.svg#detective"></use>
               </svg>
-              <h3 class="advantsges__item-title">Полная конфиденциальность</h3>
+              <h3 class="advantages__item-title">Полная конфиденциальность</h3>
               <p class="advantages__item-text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
             </a>
           </li>
@@ -95,7 +95,7 @@
                 <title>Цена</title>
                 <use xlink:href="/img/library.svg#tag"></use>
               </svg>
-              <h3 class="advantsges__item-title">Персонализация стоимости</h3>
+              <h3 class="advantages__item-title">Персонализация стоимости</h3>
               <p class="advantages__item-text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
                 установить ту цену, которая Вас устраивает.</p>
             </a>
@@ -116,18 +116,18 @@
     <section class="main__products products">
       <h2>Service Device предлагает следующие товары и услуги</h2>
       <ul class="products__list">
-        <li class="product__item">
-          <a class="product__link">
+        <li class="products__item">
+          <a class="products__link">
             Производство печатных плат
           </a>
         </li>
-        <li class="product__item">
-          <a class="product__link">
+        <li class="products__item">
+          <a class="products__link">
             Монтаж печатных плат
           </a>
         </li>
-        <li class="product__item">
-          <a class="product__link">
+        <li class="products__item">
+          <a class="products__link">
             Комплектующие для светотехники
           </a>
         </li>
@@ -148,7 +148,7 @@
   </main>
   <footer class="footer">
     <a class="footer__logo-link">
-      <svg class="advantages__image" width="216" height="52">
+      <svg class="footer__image" width="216" height="52">
         <title>Логотип</title>
         <use xlink:href="/img/library.svg#logo-footer-desktop"></use>
       </svg>
@@ -157,7 +157,7 @@
     <ul class="footer__social social-list social">
       <li class="social__item">
         <a class="social__link">
-          <svg class="advantages__image" width="27" height="27">
+          <svg class="social__image" width="27" height="27">
             <title>Facebook</title>
             <use xlink:href="/img/library.svg#fb-icon"></use>
           </svg>
@@ -165,7 +165,7 @@
       </li>
       <li class="social__item">
         <a class="social__link">
-          <svg class="advantages__image" width="27" height="26">
+          <svg class="social__image" width="27" height="26">
             <title>Одноклассники</title>
             <use xlink:href="/img/library.svg#ok-icon"></use>
           </svg>
@@ -173,7 +173,7 @@
       </li>
       <li class="social__item">
         <a class="social__link">
-          <svg class="advantages__image" width="26" height="27">
+          <svg class="social__image" width="26" height="27">
             <title>Вконтакте</title>
             <use xlink:href="/img/library.svg#vk-icon"></use>
           </svg>
@@ -198,17 +198,17 @@
             <a class="footer-nav__link">Монтаж печатных плат</a>
           </li>
 
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Комплектующие</a>
-        </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link">Комплектующие</a>
+          </li>
 
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Доставка</a>
-        </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link">Доставка</a>
+          </li>
 
-        <li class="footer-nav__item">
-          <a class="footer-nav__link">Контакты</a>
-        </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link">Контакты</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -226,6 +226,25 @@
       <span class="copyright__developed">Developed by wow studio</span>
     </div>
   </footer>
+
+  <section class="modal">
+    <h2 class="modal__title">Закажите звонок</h2>
+    <form class="modal__form">
+      <button class="modal-close close-button" type="button"><span class="visually-hidden">Закрыть </span></button>
+      <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+      <input type="text" class="modal__input modal__name" name="name" placeholder="Имя">
+
+      <input type="tel" class="modal__input modal__phone-number" name="phone-number" placeholder="Телефон">
+
+      <textarea class="modal__textarea modal__message" name="message" placeholder="Ваш вопрос"></textarea>
+
+      <button type="submit" class="button send-button">Отправить</button>
+      <label class="modal__label" for="modal-checkbox">Я согласен на обработку персональных данных</label>
+      <input type="checkbox" class="modal__checkbox" id="modal-checkbox" name="checkbox" checked="">
+
+    </form>
+  </section>
 </body>
 
 </html>
