@@ -1,0 +1,22 @@
+.main {
+  min-width: $desktop-width;
+  width: 1915px;
+  background-color: $bg-color-white;
+  background-image: url("../img/triangle-white-desktop@x1.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/triangle-white-desktop@x2.png");
+    background-size: cover;
+    background-color: $bg-color-white;
+  }
+}
+
+.main__container {
+  width: 1170px;
+  margin: 0 auto;
+}
