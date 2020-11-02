@@ -1,0 +1,37 @@
+.copyright {
+  width: 1915px;
+  border-top: 1px solid $br-color;
+}
+
+.copyright__wrapper {
+  width: 1412px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.copyright__text,
+.copyright__reserved,
+.copyright__privacy,
+.copyright__developed {
+  font-family: "PT Mono", "Roboto", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
+.copyright__reserved {
+  margin-right: 85px;
+}
+
+.copyright__text {
+  margin-right: 155px;
+}
+
+.copyright__privacy {
+  margin-right: 420px;
+}

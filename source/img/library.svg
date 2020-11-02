@@ -57,4 +57,8 @@
 
 <symbol id="arrow" viewBox="0 0 6 9">
 <path d="M1 8.5l4-4-4-4" stroke="#fff" stroke-linejoin="round"/></symbol>
+
+<symbol id="checked" width="9" height="7"  fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.987305 2.66667L3.99907 6L8.51672 1" stroke="white"/>
+</symbol>
 </svg>

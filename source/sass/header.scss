@@ -1,5 +1,4 @@
 .header {
-  min-width: $desktop-width;
   width: 1915px;
   background-color: $bg-color;
   background-image: url("../img/bg-desktop@x1.png");
@@ -9,8 +8,8 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-desktop@x1.png");
+  @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+    background-image: url("../img/bg-desktop@x2.png");
     background-size: cover;
     background-color: $bg-color;
   }
@@ -37,6 +36,14 @@
   margin: 0;
   margin-right: 118px;
   padding: 0;
+}
+
+.logo-image--phone {
+  display: none;
+}
+
+.logo-image--desktop {
+  display: block;
 }
 
 .contacts__humburger-button {
@@ -87,7 +94,7 @@
 
 .contacts__link {
   width: 218px;
-  display: block;
+  display: flex;
   text-decoration: none;
   font-family: "PT Mono", "Roboto", monospace;
   font-weight: normal;
@@ -107,7 +114,7 @@
   display: block;
   width: 180px;
   height: 45px;
-  border: 1 solid $white;
+  border: 1px solid $white;
   border-radius: 5px;
   background-color: transparent;
   font-size: 14px;
@@ -196,9 +203,13 @@
   left: 779px;
 }
 
-.contects__mail,
+
+.contacts__mail,
 .contacts__phone {
   display: block;
+  width: 184px;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__img-mail {
@@ -236,13 +247,9 @@
   padding: 0;
 }
 
-.logo-image--desktop {
-  display: block;
-}
-
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .header {
-    min-width: $tablet-width;
+    max-width: $tablet-width;
     width: $tablet-width;
     background-color: $bg-color;
     background-image: url("../img/bg-tablet@x1.png");
@@ -252,7 +259,7 @@
     margin: 0 auto;
     padding: 0;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
       background-image: url("../img/bg-tablet@x1.png");
       background-size: cover;
       background-color: $bg-color;
@@ -356,12 +363,12 @@
     padding: 0;
   }
 
-  .contacts__img-mail {
+  .contacts__img-mail-tablet {
     width: 25px;
     height: 18px;
   }
 
-  .contacts__img-phone {
+  .contacts__img-phone-tablet {
     width: 24px;
     height: 24px;
   }
@@ -454,9 +461,9 @@
   }
 }
 
-@media (min-width: $mobile-width) {
+@media (max-width: $mobile-width) {
   .header {
-    min-width: $mobile-width;
+    max-width: $mobile-width;
     width: $mobile-width;
     background-color: $bg-color;
     background-image: url("../img/bg-mobile@x1.png");
@@ -466,7 +473,7 @@
     margin: 0 auto;
     padding: 0;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
       background-image: url("../img/bg-mobile@x1.png");
       background-size: cover;
       background-color: $bg-color;
@@ -487,12 +494,12 @@
     display: flex;
   }
 
-  .contacts__img-mail {
+  .contacts__img-mail-phone {
     width: 19px;
     height: 14px;
   }
 
-  .contacts__img-phone {
+  .contacts__img-phone-phone {
     width: 18px;
     height: 18px;
   }
@@ -575,7 +582,7 @@
     padding: 0;
     margin: 0;
   }
-  
+
   .contacts__img {
     margin: 0;
     padding: 0;
